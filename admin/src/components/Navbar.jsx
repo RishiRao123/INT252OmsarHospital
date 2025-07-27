@@ -4,6 +4,7 @@ import { DoctorContext } from "../context/DoctorContext";
 import { AdminContext } from "../context/AdminContext";
 import { useNavigate } from "react-router-dom";
 
+// Navbar for admin page
 const Navbar = () => {
   const { dToken, setDToken } = useContext(DoctorContext);
   const { aToken, setAToken } = useContext(AdminContext);
