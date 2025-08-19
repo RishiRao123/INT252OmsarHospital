@@ -17,8 +17,8 @@ connectCloudinary();
 app.use(express.json());
 app.use(cors({
   origin: [
-    "https://omsar-hospital.vercel.app",
-    "https://omsar-hospital-admin.vercel.app"
+    "https://omsar-hospital-61bhc61fw-rishi-raos-projects-78d70f55.vercel.app/",
+    "https://omsar-hospital-admin-nw4xfn90g-rishi-raos-projects-78d70f55.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
