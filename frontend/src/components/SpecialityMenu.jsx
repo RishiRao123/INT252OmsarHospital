@@ -27,7 +27,7 @@ const SpecialityMenu = () => {
           >
             <img
               className='w-20 h-20 mr-6 rounded-md'
-              src={item.image}
+              src={`${item.image}`}
               alt={item.speciality}
             />
             <div className='flex flex-col'>

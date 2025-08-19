@@ -48,7 +48,7 @@ export const specialityData = [
   {
     speciality: "Cardiologist",
     image:
-      "https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/the-best-team-of-heart-specialists.png",
+      "https://d3upjtc0wh66ez.cloudfront.net/wp-content/uploads/2024/07/Cardiology.svg",
   },
   {
     speciality: "Nephrologist",
