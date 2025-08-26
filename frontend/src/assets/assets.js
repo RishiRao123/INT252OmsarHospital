@@ -22,6 +22,8 @@ import doc13 from "./doc13.png";
 import doc14 from "./doc14.png";
 import doc15 from "./doc15.png";
 import gynac from "./gynac.png";
+import cardio from "./cardio.png";
+import neuro from "./neuro";
 
 export const assets = {
   profile_pic,
@@ -47,8 +49,7 @@ export const specialityData = [
   },
   {
     speciality: "Cardiologist",
-    image:
-      "https://d3upjtc0wh66ez.cloudfront.net/wp-content/uploads/2024/07/Cardiology.svg",
+    image: cardio,
   },
   {
     speciality: "Nephrologist",
@@ -57,8 +58,7 @@ export const specialityData = [
   },
   {
     speciality: "Neurologist",
-    image:
-      "https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/neurosurgery-hospital-in-hyderabad.png",
+    image: neuro,
   },
   {
     speciality: "Gastroenterologist",
