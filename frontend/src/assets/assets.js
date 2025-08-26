@@ -21,10 +21,11 @@ import doc12 from "./doc12.png";
 import doc13 from "./doc13.png";
 import doc14 from "./doc14.png";
 import doc15 from "./doc15.png";
-import gynaco from "./gynaco.png";
+import gynac from "./gynac.png";
 import cardio from "./cardio.png";
 import neuro from "./neuro.png";
 import nephro from "./nephro.png";
+import gastro from "./gastro.png";
 
 export const assets = {
   profile_pic,
@@ -46,7 +47,7 @@ export const specialityData = [
   },
   {
     speciality: "Gynecologist",
-    image: gynaco,
+    image: gynac,
   },
   {
     speciality: "Cardiologist",
@@ -62,8 +63,7 @@ export const specialityData = [
   },
   {
     speciality: "Gastroenterologist",
-    image:
-      "https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/gastro-.png",
+    image: gastro,
   },
 ];
 
