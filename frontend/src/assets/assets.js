@@ -21,9 +21,10 @@ import doc12 from "./doc12.png";
 import doc13 from "./doc13.png";
 import doc14 from "./doc14.png";
 import doc15 from "./doc15.png";
-import gynac from "./gynac.png";
+import gynaco from "./gynaco.png";
 import cardio from "./cardio.png";
-import neuro from "./neuro";
+import neuro from "./neuro.png";
+import nephro from "./nephro.png";
 
 export const assets = {
   profile_pic,
@@ -45,7 +46,7 @@ export const specialityData = [
   },
   {
     speciality: "Gynecologist",
-    image: gynac,
+    image: gynaco,
   },
   {
     speciality: "Cardiologist",
@@ -53,8 +54,7 @@ export const specialityData = [
   },
   {
     speciality: "Nephrologist",
-    image:
-      "https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/nephrology-hospital-in-hyderabad.png",
+    image: nephro,
   },
   {
     speciality: "Neurologist",
