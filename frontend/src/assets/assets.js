@@ -21,6 +21,7 @@ import doc12 from "./doc12.png";
 import doc13 from "./doc13.png";
 import doc14 from "./doc14.png";
 import doc15 from "./doc15.png";
+import gynac from "./gynac.png";
 
 export const assets = {
   profile_pic,
@@ -42,8 +43,7 @@ export const specialityData = [
   },
   {
     speciality: "Gynecologist",
-    image:
-      "https://d18yrmqbzi0q7a.cloudfront.net/wp-content/uploads/best-pediatric-hospitals-in-hyderabad.png",
+    image: gynac,
   },
   {
     speciality: "Cardiologist",
