@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const handleOptionClick = (path) => {
     navigate(path);
-    setIsDropdownOpen(false); // Close dropdown after selecting
+    setIsDropdownOpen(false);
   };
 
   useEffect(() => {
@@ -48,7 +48,9 @@ const Navbar = () => {
         <NavLink
           to='/'
           className={({ isActive }) =>
-            isActive ? "text-orange-600" : "text-blue-900 hover:text-orange-600"
+            isActive
+              ? "text-orange-600 border-b-2 border-orange-600 pb-1"
+              : "text-blue-900 hover:text-orange-600"
           }
         >
           HOME
@@ -56,7 +58,9 @@ const Navbar = () => {
         <NavLink
           to='/doctors'
           className={({ isActive }) =>
-            isActive ? "text-orange-600" : "text-blue-900 hover:text-orange-600"
+            isActive
+              ? "text-orange-600 border-b-2 border-orange-600 pb-1"
+              : "text-blue-900 hover:text-orange-600"
           }
         >
           ALL DOCTORS
@@ -64,7 +68,9 @@ const Navbar = () => {
         <NavLink
           to='/about'
           className={({ isActive }) =>
-            isActive ? "text-orange-600" : "text-blue-900 hover:text-orange-600"
+            isActive
+              ? "text-orange-600 border-b-2 border-orange-600 pb-1"
+              : "text-blue-900 hover:text-orange-600"
           }
         >
           ABOUT
@@ -72,7 +78,9 @@ const Navbar = () => {
         <NavLink
           to='/contact'
           className={({ isActive }) =>
-            isActive ? "text-orange-600" : "text-blue-900 hover:text-orange-600"
+            isActive
+              ? "text-orange-600 border-b-2 border-orange-600 pb-1"
+              : "text-blue-900 hover:text-orange-600"
           }
         >
           CONTACT
