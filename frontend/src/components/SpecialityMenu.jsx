@@ -1,40 +1,51 @@
 import React from "react";
 import { specialityData } from "../assets/assets";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 
 const SpecialityMenu = () => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   return (
     <div
       id='speciality'
-      className='flex flex-col items-center gap-8 py-16 text-[#262626] w-full'
+      className='w-full py-16 px-6 sm:px-12 lg:px-20 rounded-lg bg-gray-50 text-[#262626]'
     >
-      <h1 className='text-4xl font-semibold text-blue-900'>
-        Find by Speciality
-      </h1>
-      <p className='w-full sm:w-1/2 text-center text-lg text-black'>
-        Browse through our extensive list of trusted doctors, Book your
-        appointment hassle-free.
-      </p>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 w-full px-4 sm:px-8 lg:px-16'>
+      {/* Header Section */}
+      <div className='text-center max-w-3xl mx-auto'>
+        <h1 className='text-4xl font-bold text-blue-900 mb-4'>
+          Find by Speciality
+        </h1>
+        <p className='text-lg text-gray-700'>
+          Browse through our extensive list of trusted doctors, and book your
+          appointment hassle-free.
+        </p>
+      </div>
+
+      {/* Specialities Grid */}
+      <div className='mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3'>
         {specialityData.map((item, index) => (
           <Link
             to={`/doctors/${item.speciality}`}
             onClick={() => scrollTo(0, 0)}
-            className='flex items-center p-6 rounded-lg bg-white hover:text-blue-900 overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500'
             key={index}
+            className='group relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer'
           >
-            <img
-              className='w-20 h-20 mr-6 rounded-md'
-              src={`${item.image}`}
-              alt={item.speciality}
-            />
-            <div className='flex flex-col'>
-              <p className='text-xl font-semibold text-blue-900'>
+            {/* Image with overlay */}
+            <div className='relative h-40 w-full'>
+              <img
+                src={item.image}
+                alt={item.speciality}
+                className='h-full w-full object-cover group-hover:scale-105 transition-transform duration-500'
+              />
+              <div className='absolute inset-0 bg-gradient-to-t from-blue-900/70 via-transparent to-transparent opacity-70'></div>
+            </div>
+
+            {/* Content */}
+            <div className='p-6'>
+              <h3 className='text-xl font-semibold text-blue-900'>
                 {item.speciality}
-              </p>
-              <p className='text-md text-black'>
+              </h3>
+              <p className='mt-2 text-gray-700 text-sm leading-relaxed'>
                 {item.description ||
                   "Find specialists and experts for comprehensive care and guidance in this field."}
               </p>
@@ -42,15 +53,19 @@ const SpecialityMenu = () => {
           </Link>
         ))}
       </div>
-      <button
-        className='bg-blue-900 text-white text-lg hover:scale-105 transition-all duration-300 px-12 py-3 rounded-full mt-10'
-        onClick={() => {
-          navigate("/contact"); // Navigate to the contact page
-          scrollTo(0, 0); // Scroll to the top of the page
-        }}
-      >
-        Query?? Ask here
-      </button>
+
+      {/* Call to Action */}
+      <div className='flex justify-center mt-16'>
+        <button
+          className='bg-blue-900 text-white text-lg font-medium px-10 py-3 rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300'
+          onClick={() => {
+            navigate("/contact");
+            scrollTo(0, 0);
+          }}
+        >
+          Query? Ask here
+        </button>
+      </div>
     </div>
   );
 };
