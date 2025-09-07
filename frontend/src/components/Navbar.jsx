@@ -108,7 +108,7 @@ const Navbar = () => {
 
             {/* Dropdown Menu */}
             {isDropdownOpen && (
-              <div className='absolute top-12 right-0 bg-white border rounded-lg shadow-lg text-gray-700 w-40 max-h-60 overflow-y-auto'>
+              <div className='absolute top-12 right-0 bg-white border rounded-lg shadow-lg text-gray-700 w-40 max-h-60 overflow-y-auto z-50'>
                 <div
                   className='cursor-pointer text-lg text-blue-900 hover:bg-blue-900 hover:text-white rounded-lg p-2 transition-colors duration-200'
                   onClick={() => {
